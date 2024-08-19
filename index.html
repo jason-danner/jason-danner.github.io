@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="mt-4">Jason's Page</h1>
+        </header>
+        <div class="row">
+            <ul class="nav nav-tabs-vertical flex-column col-auto" id="main-tabs">
+                <li class="nav-item">
+                    <button class="nav-link active w-auto" id="about-tab" data-bs-toggle="tab"
+                        data-bs-target="#about-tab-pane">About Me</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link w-100" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#contact-tab-pane">Contact</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link w-100" id="resume-tab" data-bs-toggle="tab"
+                        data-bs-target="#resume-tab-pane">Resume</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link w-100" id="portfolio-tab" data-bs-toggle="tab"
+                        data-bs-target="#portfolio-tab-pane">Portfolio</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link w-100" id="coursework-tab" data-bs-toggle="tab"
+                        data-bs-target="coursework-tab-pane">Coursework</button>
+                </li>
+            </ul>
+            <div class="tab-content p-0 col">
+                <div class="tab-pane fade show active p-4" id="about-tab-pane">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="d-flex flex-column border">
+                                <img class="image-fluid" src="asset/terrible_portrait.jpg">
+                                <span class="text-center p-1">Terrible Portrait</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h2>Hello</h2>
+                            <p>
+                                I'm Jason Danner. I'm a student developer; you can see some of my projects on the other tabs.
+                                There's also an extremely unflattering picture of me to the left there.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="resume-tab-pane">
+                    <object type="application/pdf" data="asset/resume.pdf"></object>
+                    <a href="asset/resume.pdf">Download</a>
+                </div>
+                <div class="tab-pane fade" id="portfolio-tab-pane">
+                    <div class="container-fluid text-light font-monospace text-center p-2 outline"
+                        style="background-image: url(asset/hringr.png); background-position: center">
+                        <h2 class="fs-1 fw-bold">⚔️Hringr⚔️</h2>
+                        <div class="fs-2 fw-bold">Fantasy Wilderness Simulator</div>
+                    </div>
+                    <p class="m-2">A game that I'm making. You can't play it yet.</p>
+                    <div class="container-fluid text-light font-monospace text-center p-2 outline position-relative"
+                        style="background-image: url(asset/glacier.png); background-position: center">
+                        <h2 class="fs-1 fw-bold">⛄Glacier⛄</h2>
+                        <div class="fs-2 fw-bold">Concatenative Scripting Language</div>
+                        <div class="position-absolute bottom-0 end-0 pe-1">
+                            <a href="https://www.flickr.com/photos/o_0/55896170/">© Guilhem Vellut</a>
+                            <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>
+                        </div>
+                    </div>
+                    <p class="m-2">A language that I designed. You can't use it yet.</p>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane">
+                    <h2>Contact</h2>
+                    <p> 
+                        <script type="text/javascript" src="https://form.jotform.com/jsform/242313019566150"></script>
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="coursework-tab-pane">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

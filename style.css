@@ -1,0 +1,55 @@
+:root {
+  --stripecol: hsl(231, 39%, 33%, .11);
+  --stripes: linear-gradient(-45deg, hsl(0,0%,100%,0) 25%, var(--stripecol) 25%, var(--stripecol) 50%, hsl(0,0%,100%,0) 50%, hsl(0,0%,100%,0) 75%, var(--stripecol) 75%);
+}
+
+body {
+  background-image: linear-gradient(white, #bdbdbd);
+  min-height: 100vh;
+}
+
+.nav-tabs-vertical {
+  border-right: 1px solid rgb(222, 226, 230);
+  padding: 0;
+
+  .nav-link {
+    float: right;
+    text-align: right;
+    margin-right: -1px;
+    margin-bottom: .25em;
+    border-right: 1px solid rgb(222, 226, 230);
+    border-top: 1px solid rgb(222, 226, 230);
+    border-bottom: 1px solid rgb(222, 226, 230);
+    border-left: 1px solid rgb(222, 226, 230);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #f8f9fa;
+  }
+
+  .nav-link.active {
+    border-right-color: white;
+    background-color: white;
+  }
+}
+
+.tab-content {
+  background-color: white;
+  border: 1px solid rgb(222, 226, 230);
+  border-left: none;
+}
+
+.outline {
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+#portrait {
+  width: 250px;
+  height: 325px;
+  border: 1px solid rgb(222, 226, 230);
+  background-image: var(--stripes);
+  background-size: 8px 8px;
+}
